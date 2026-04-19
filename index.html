@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>沧州盛世伟业汽车附件有限公司</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Microsoft YaHei",sans-serif;
+    scroll-behavior:smooth;
+}
+body{
+    background:#f7f9fc;
+    color:#333;
+}
+
+/* 顶部导航 */
+header{
+    background:#1a2b48;
+    color:white;
+    padding:18px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+nav a{
+    color:white;
+    margin:0 16px;
+    text-decoration:none;
+    font-size:15px;
+    transition:0.3s;
+}
+nav a:hover{
+    color:#409eff;
+}
+.lang button{
+    background:#409eff;
+    color:white;
+    border:none;
+    padding:6px 12px;
+    border-radius:4px;
+    margin-left:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.lang button:hover{
+    background:#2e7dcc;
+}
+
+/* 横幅 */
+.banner{
+    background:linear-gradient(135deg,#1a2b48,#2c4a7d);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+.banner h2{
+    font-size:36px;
+    margin-bottom:15px;
+}
+.banner p{
+    font-size:18px;
+    max-width:800px;
+    margin:0 auto;
+    opacity:0.9;
+}
+
+/* 内容容器 */
+.container{
+    max-width:1100px;
+    margin:40px auto;
+    padding:0 20px;
+}
+.section{
+    background:white;
+    border-radius:12px;
+    padding:35px;
+    margin-bottom:30px;
+    box-shadow:0 3px 15px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+.section:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+.section h2{
+    color:#1a2b48;
+    font-size:26px;
+    margin-bottom:20px;
+    padding-bottom:10px;
+    border-bottom:2px solid #409eff;
+    display:inline-block;
+}
+
+/* 产品卡片 */
+.product-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:20px;
+}
+.product-card{
+    background:#f8f9fa;
+    border-radius:10px;
+    padding:25px;
+    transition:0.3s;
+}
+.product-card:hover{
+    background:#e9f2ff;
+}
+.product-card h3{
+    color:#2c4a7d;
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+/* 列表 */
+.advantage-list{
+    list-style:none;
+    margin-top:15px;
+}
+.advantage-list li{
+    padding:10px 0;
+    font-size:16px;
+    position:relative;
+    padding-left:25px;
+}
+.advantage-list li::before{
+    content:"✓";
+    color:#409eff;
+    font-weight:bold;
+    position:absolute;
+    left:0;
+}
+
+/* 联系信息 */
+.contact-info p{
+    font-size:16px;
+    line-height:2;
+}
+
+/* 底部 */
+footer{
+    background:#1a2b48;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    margin-top:40px;
+}
+footer p{
+    opacity:0.8;
+}
+
+/* 语言切换 */
+.en{display:none;}
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+    .banner h2{
+        font-size:26px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- 顶部 -->
+<header>
+<div class="logo cn">沧州盛世伟业汽车附件</div>
+<div class="logo en">CANGZHOU SHENGSHIWEIYE AUTO PARTS</div>
+<nav>
+<a href=" " class="cn">关于我们</a >
+<a href="#product" class="cn">产品中心</a >
+<a href="#strength" class="cn">工厂实力</a >
+<a href="#contact" class="cn">联系我们</a >
+
+<a href="#about" class="en">About</a >
+<a href="#product" class="en">Products</a >
+<a href="#strength" class="en">Strength</a >
+<a href="#contact" class="en">Contact</a >
+</nav>
+<div class="lang">
+<button onclick="setLang('cn')">中文</button>
+<button onclick="setLang('en')">English</button>
+</div>
+</header>
+
+<!-- 横幅 -->
+<div class="banner">
+<h2 class="cn">源头工厂 · 品质可靠 · 现货速发</h2>
+<h2 class="en">Original Factory · Reliable Quality · Fast Delivery</h2>
+<p class="cn">专业生产车轮平衡块、气门嘴、轮胎工具，二十年实体老厂</p >
+<p class="en">Professional manufacturer of wheel weights, valve stems and tire tools for 20+ years</p >
+</div>
+
+<div class="container">
+
+<!-- 关于我们 -->
+<div id="about" class="section">
+<h2 class="cn">关于我们</h2>
+<h2 class="en">About Us</h2>
+<p class="cn">沧州盛世伟业汽车附件有限公司位于河北省沧州市献县，成立于2006年，是集研发、生产、销售于一体的现代化汽车附件制造企业。主营车轮平衡块、气门嘴、轮胎维修工具等产品，拥有完整生产线与严格质检体系，产品远销国内外市场，深受客户信赖。</p >
+<p class="en">Founded in 2006, Cangzhou Shengshiweiye Automobile Accessory Co.,Ltd. is a modern manufacturer integrating R&D, production and sales. Located in Xian County, Cangzhou, we specialize in wheel weights, valve stems and tire tools with strict quality control and global customers.</p >
+</div>
+
+<!-- 产品中心 -->
+<div id="product" class="section">
+<h2 class="cn">产品中心</h2>
+<h2 class="en">Products</h2>
+<div class="product-box">
+<div class="product-card">
+<h3 class="cn">车轮平衡块</h3>
+<h3 class="en">Wheel Weights</h3>
+<p class="cn">卡扣式、粘贴式、无铅环保型，精度高，适配各类车型。</p >
+<p class="en">Clip-on, adhesive, lead-free eco-friendly, high precision for all vehicles.</p >
+</div>
+<div class="product-card">
+<h3 class="cn">气门嘴系列</h3>
+<h3 class="en">Valve Stems</h3>
+<p class="cn">橡胶气门嘴、铝合金气门嘴、真空胎专用，密封性强，耐老化。</p >
+<p class="en">Rubber & aluminum valve stems for tubeless tires, excellent sealing & durability.</p >
+</div>
+<div class="product-card">
+<h3 class="cn">轮胎维修工具</h3>
+<h3 class="en">Tire Tools</h3>
+<p class="cn">补胎工具、拆装工具、平衡机配件，门店专用，性价比高。</p >
+<p class="en">Tire repair tools, mounting tools, balancer accessories for repair shops.</p >
+</div>
+</div>
+</div>
+
+<!-- 工厂实力 -->
+<div id="strength" class="section">
+<h2 class="cn">工厂实力</h2>
+<h2 class="en">Our Strength</h2>
+<ul class="advantage-list">
+<li class="cn">实体源头工厂，无中间商差价</li>
+<li class="en">Original factory, no middleman</li>
+<li class="cn">自动化生产线，产能稳定</li>
+<li class="en">Automatic production line, stable capacity</li>
+<li class="cn">严格质检，每件产品精度达标</li>
+<li class="en">Strict quality control, high precision</li>
+<li class="cn">支持定制、贴牌、外贸代工</li>
+<li class="en">Support customization, OEM & ODM</li>
+<li class="cn">现货充足，发货快速，售后无忧</li>
+<li class="en">Adequate stock, fast delivery</li>
+</ul>
+</div>
+
+<!-- 联系我们 -->
+<div id="contact" class="section">
+<h2 class="cn">联系我们</h2>
+<h2 class="en">Contact Us</h2>
+<div class="contact-info">
+<p class="cn">公司名称：沧州盛世伟业汽车附件有限公司</p >
+<p class="en">Company: Cangzhou Shengshiweiye Automobile Accessory Co.,Ltd</p >
+<p class="cn">地址：河北省沧州市献县郭庄镇孔庄村</p >
+<p class="en">Address: Kongzhuang, Guozhuang Town, Xian County, Cangzhou, Hebei</p >
+<p class="cn">电话：15931717088</p >
+<p class="en">Tel: 15931717088</p >
+<p class="cn">业务范围：批发、代理、外贸、贴牌代工</p >
+<p class="en">Business: Wholesale, Agency, Foreign Trade, OEM</p >
+</div>
+</div>
+
+</div>
+
+<!-- 底部 -->
+<footer>
+<p class="cn">沧州盛世伟业汽车附件有限公司 © 版权所有</p >
+<p class="en">Cangzhou Shengshiweiye Automobile Accessory Co.,Ltd © All Rights Reserved</p >
+</footer>
+
+<script>
+function setLang(lang){
+    document.querySelectorAll('.cn,.en').forEach(e=>e.style.display='none');
+    document.querySelectorAll('.'+lang).forEach(e=>e.style.display='block');
+}
+setLang('cn');
+</script>
+</body>
+</html>
